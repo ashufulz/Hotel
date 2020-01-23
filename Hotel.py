@@ -43,7 +43,7 @@ def mail():
         server.quit()
 
     else:
-        server.login('username', 'password')
+        server.login('mail-id', 'password')
 
         subject = "Hotel - Oyo"
         body = 'Price fell down at. Book soon!\n' \
@@ -63,6 +63,6 @@ def mail():
 while True:
     final()
     driver.close()
-    time.sleep(3600)
+    time.sleep(3600)                        # Will run the code every hour
 
 
